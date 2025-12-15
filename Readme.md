@@ -33,7 +33,7 @@ cd admin_finder
 ## Install required dependencies:
 ```
 pip install -r requirements.txt
-python admin_finderx_pro.py
+python encoded_main.py
 ```
 Basic Scanning
 Enter the target URL in the "Target URL" field
@@ -107,7 +107,7 @@ Input field validation
 ## Contributing
 Contributions are welcome!
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE]() file for details.
 
 ## Disclaimer
 This tool is intended for security testing and educational purposes only. The developers are not responsible for any misuse of this software. Always obtain proper authorization before scanning any systems.
