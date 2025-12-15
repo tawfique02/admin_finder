@@ -35,6 +35,10 @@ cd admin_finder
 pip install -r requirements.txt
 python encoded_main.py
 ```
+## NOTE
+~~~
+password: admin
+~~~
 Basic Scanning
 Enter the target URL in the "Target URL" field
 
